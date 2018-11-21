@@ -8,14 +8,7 @@ const useInputValue = initialValue => {
   return {
     value,
     onChange: e => setValue(e.target.value),
-    resetvalue: () => setValue(""),
-    updatedvalue: (todo, todos, setTodos) => {
-      setValue(todo.value);
-      const updatedTodos = todos.filter(
-        localTodo => localTodo.value !== todo.value
-      );
-      setTodos([...updatedTodos]);
-    }
+    resetvalue: () => setValue("")
   };
 };
 export default function Addposts({ onSubmit }, ref) {
