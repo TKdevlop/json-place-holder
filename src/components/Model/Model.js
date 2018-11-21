@@ -64,7 +64,7 @@ export default function Model(props) {
           }}
         />
         <DialogActions>
-          <Button onCLick={props.closeModel} color="secondary">
+          <Button onClick={props.closeModel} color="secondary">
             CANCEL
           </Button>
           <Button
